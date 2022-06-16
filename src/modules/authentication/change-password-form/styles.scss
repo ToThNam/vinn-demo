@@ -1,0 +1,109 @@
+@import "styles/variables";
+
+.container-change-password {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1110px;
+  border-radius: 24px;
+  z-index: 10000;
+  text-align: center;
+  display: flex;
+  .image-change-password {
+    width: 635px;
+    height: 663px;
+    background-image: url("/assets/image/change-password-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .form-change-password {
+    width: 475px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 60px 48px 48px;
+    border: 0.5px solid #fcf0f1 !important;
+    border-left: none;
+    .logo {
+      height: 180px;
+      svg {
+        transform: translateY(5%);
+      }
+    }
+    .change-password-form {
+      position: relative;
+      top: 20%;
+      transform: translateY(-50%);
+
+      .ant-form-item-control-input {
+        text-align: left;
+        width: 380px;
+        .ant-form-item-control-input-content div {
+          font-size: 28px;
+          font-family: $font-family;
+          font-weight: 700;
+          color: $dark-blue;
+        }
+      }
+      .ant-form-item-control-input {
+        .ant-input-suffix {
+          margin-right: 8px;
+        }
+        .ant-input-affix-wrapper > input.ant-input {
+          font-size: 16px;
+        }
+        .ant-form-item-control-input-content a {
+          color: $blue-gray-700;
+          font-family: $font-family;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 24px;
+          display: flex;
+        }
+      }
+      .form-password{
+        flex-direction: column;
+      }
+      [ant-click-animating-without-extra-node="true"]::after,
+      .ant-click-animating-node {
+        box-shadow: 0 0 0 0 white !important;
+      }
+      .button-form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 166px;
+          height: 56px;
+        }
+      }
+      .description {
+        font-size: 14px;
+        line-height: 22px;
+        color: #696984;
+        margin-bottom: 16px;
+        text-align: left;
+        color: $blue-gray-700;
+        font-family: $font-family;
+        font-weight: 400;
+      }
+      .description-error {
+        font-size: 14px;
+        line-height: 22px;
+        color: red;
+        margin-bottom: 16px;
+        font-weight: 400;
+      }
+    }
+    .password-correct {
+      border: 1px solid green;
+      &:focus, &:hover {
+        box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2);
+        border-color: green !important;
+      }
+    }
+  }
+}

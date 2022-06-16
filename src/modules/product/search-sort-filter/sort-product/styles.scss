@@ -1,0 +1,18 @@
+@import "styles/variables";
+
+.sort-button-container {
+  height: 48px;
+  margin: 0 8px;
+}
+.sort-menu {
+  padding: 24px;
+  margin: 16px 0 0 0;
+  font-family: $font-family;
+  border-radius: $border-radius-large;
+}
+.sort-item {
+  cursor: pointer;
+  font-family: $font-family;
+  margin-bottom: 8px;
+  color: $blue-gray-700;
+}

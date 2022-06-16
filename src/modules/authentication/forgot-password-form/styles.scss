@@ -1,0 +1,85 @@
+@import "styles/variables";
+
+.container-forgot-password {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1110px;
+  border-radius: 24px;
+  z-index: 10000;
+  text-align: center;
+  display: flex;
+  .image-forgot-password {
+    width: 635px;
+    height: 663px;
+    background-image: url("/assets/image/forgor-password-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .form-forgot {
+    width: 475px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 60px 48px 48px;
+    border: 0.5px solid #fcf0f1 !important;
+    border-left: none;
+    .logo {
+      height: 140px;
+      svg {
+        transform: translateY(5%);
+      }
+    }
+    .ant-form-item-control-input {
+      text-align: left;
+      width: 380px;
+      .ant-form-item-control-input-content div {
+        font-size: 28px;
+        font-family: $font-family;
+        font-weight: 700;
+        color: $dark-blue;
+        line-height: 42px;
+        left: 0px;
+      }
+    }
+    .forgot-form {
+      position: relative;
+      top: 10%;
+      transform: translateY(-50%);
+      flex-direction: column;
+      .ant-form-item-control-input {
+        .ant-input-affix-wrapper > input.ant-input {
+          font-size: 16px;
+        }
+      }
+      [ant-click-animating-without-extra-node="true"]::after,
+      .ant-click-animating-node {
+        box-shadow: 0 0 0 0 white !important;
+      }
+      .button-form {
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 166px;
+          height: 56px;
+        }
+      }
+      .iscorrectPhone {
+        border-color:#d9d9d9 ;
+      }
+      .iscorrectPhone-error {
+        border-color: red;
+      }
+      .description-error{
+        color: $red;
+        text-align: right;
+        font-family: $font-family;
+        font-size: 12px;
+        line-height: 0px;
+        font-style: italic;
+      }
+    }
+  }
+}

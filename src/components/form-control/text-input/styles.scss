@@ -1,0 +1,31 @@
+@import "styles/variables";
+
+.form-input {
+  .ant-form-item-control-input-content {
+    .ant-input-affix-wrapper {
+      height: 56px;
+      border-radius: $border-radius-medium;
+      border-color: 1px solid $blue-gray-100;
+      padding: 4px;
+      &:focus {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d8528e !important;
+      }
+      &:hover {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d8528e !important;
+      }
+      .ant-input-prefix {
+        margin: 0 12px;
+      }
+    }
+    .ant-input-affix-wrapper-focused {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #d8528e !important;
+      box-shadow: none;
+    }
+  }
+}

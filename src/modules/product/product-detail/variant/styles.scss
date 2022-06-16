@@ -1,0 +1,45 @@
+@import "styles/variables";
+
+.ant-form {
+  display: flex;
+  justify-content: center;
+  .variant-content {
+    padding: 24px;
+    border-radius: $border-radius-huge;
+    margin-bottom: 24px;
+    width: 964px;
+    background-color: white;
+  }
+  .table-cell{
+    height: 36px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $blue-gray-100;
+    box-sizing: border-box;
+    border-radius: $border-radius-tiny;
+  }
+  .table-error-cell{
+    height: 36px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    box-sizing: border-box;
+    border-radius: $border-radius-tiny;
+  }
+  .input-table-cell{
+    height: 36px;
+    width: 100px;
+    border: 1px solid $vinivia-pink-500;
+    box-sizing: border-box;
+    border-radius: $border-radius-tiny;
+    box-shadow: none;
+    text-align: center;
+  }
+}  
+.ant-form-item-explain {
+  min-height: 0px !important;
+}

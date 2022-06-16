@@ -1,0 +1,75 @@
+@import "styles/variables";
+
+.form-verify-code {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 512px;
+  border-radius: 24px;
+  z-index: 10000;
+  text-align: center;
+  padding: 60px 48px 48px;
+  border: 0.5px solid #fcf0f1 !important;
+  .ant-form-item-control{
+    padding: 15px;
+  }
+  .logo{
+      height: 160px;
+      svg {
+        transform: translateY(5%);
+    }
+  }
+  .verify-code-form{
+    flex-direction: column;
+  }
+  .title-verify{
+    font-size: 16px;
+    font-weight: 400;
+    color: #2c2c37;
+    font-family: $font-family;
+  }
+  .phone-verify{
+    font-size: 16px;
+    font-family: $font-semibold;
+  }
+  .pincode-input-container
+{
+  .pincode-input-text
+  {
+    text-align:center;
+    background: transparent;
+    color:$dark-blue;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    font-family: $font-family;
+  }
+  .pincode-input-text:focus
+  {
+    outline:none;
+    box-shadow:none;
+  }
+}
+  .description{
+    font-family: $font-family;
+    font-weight: 400;
+    color: $blue-gray-700;
+    font-size: 14px;
+    line-height: 22px;
+    a{
+      color: $vinivia-pink-500
+    }
+  }
+  .button-form {
+    display: flex;
+    justify-content: space-evenly;
+    height: 120px;
+    align-items: center;
+    button {
+      width: 166px;
+      height: 56px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "styles/variables";
+
+.filter-button-container {
+  height: 48px;
+  margin: 0 8px;
+}
+
+.range-input {
+  display: flex;
+  justify-content: space-between;
+  width: 352px;
+}
+.filter-input {
+  display: flex;
+  width: 167px;
+}
+.sort-menu {
+  .ant-dropdown-menu-item {
+    padding: 0;
+  }
+}
+
+.select-tree-button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  width: 352px;
+  height: 48px;
+  border-radius: $border-radius-medium;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $blue-gray-100;
+  svg path {
+    fill: $blue-gray-700;
+  }
+  &:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d8528e !important;
+  }
+}
+.filter-option-button {
+  display: flex;
+  justify-content: space-between;
+  width: 274px;
+  margin-top: 24px;
+}
+.form-select-tree {
+  border-radius: $border-radius-huge;
+}
+.select-category-form {
+  border-radius: $border-radius-huge;
+}

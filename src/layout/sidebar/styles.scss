@@ -1,0 +1,123 @@
+@import "styles/variables";
+
+.sidebar-container {
+  min-height: 100vh;
+  background: transparent !important;
+  font-family: $font-family !important;
+  .SideBar {
+    display: flex;
+  }
+  .ant-layout-sider-children {
+    background: linear-gradient(225deg, #e56c76 0%, #d8528e 100%);
+  }
+  .logo-vinvia {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+    svg path  {
+      fill: white;
+    }
+    svg ellipse {
+      fill: white;
+    }
+  }
+  .ant-menu-inline {
+    border: none;
+  }
+  .ant-menu-title-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ant-menu {
+    background-color: transparent;
+    font-size: $font-size-normal !important;
+    a {
+      color: #ffffff;
+    }
+    .ant-menu-item {
+      margin: 4px 16px;
+      border-radius: $border-radius-medium;
+      color: white;
+      height: 48px;
+      width: 232px;
+      a {
+        padding-left: 12px;
+      }
+      &:hover {
+        background: white;
+        .ant-menu-title-content {
+          color: #e56c76 !important;
+          a {
+            color: #e56c76 !important;
+          }
+        }
+        svg path {
+          fill: #e56c76;
+        }
+      }
+    }
+    .ant-menu-item::after {
+      border: none;
+    }
+    .ant-menu-item-selected {
+      background-color: white !important;
+      color: #e56c76 !important;
+      a {
+        color: #e56c76 !important;
+      }
+      svg path {
+        fill: #e56c76;
+      }
+    }
+  }
+  .menu-collapsed {
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 68px;
+    border-radius: $border-radius-medium;
+    margin: 4px auto;
+    transition: 0.3s;
+  }
+  .menu-collapsed:hover {
+    background-color: white;
+    svg path {
+      fill: #e56c76;
+    }
+  }
+  .ant-menu-inline-collapsed {
+    border: none;
+  }
+  .ant-menu-inline-collapsed {
+    border: none;
+  }
+}
+.ant-space-item {
+  font-family: $font-family !important;
+}
+.menu-profile-button {
+  width: 216px;
+  height: 68px;
+  background: #ffffff;
+  border-radius: $font-size-normal;
+  margin: 0 auto 24px auto !important;
+  padding-left: 10px;
+  svg path {
+    fill: $blue-gray-700;
+  }
+}
+
+.collapsed-avt {
+  display: flex;
+  justify-content: center;
+  height: 68px;
+}
+
+.ant-divider {
+  margin: 6px 0 !important;
+}
+
+.ant-dropdown-menu-item-active {
+  background: none !important;
+}

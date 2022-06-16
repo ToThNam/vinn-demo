@@ -1,0 +1,52 @@
+@import "styles/variables";
+
+.ant-picker {
+  padding: $font-size;
+  width: 100%;
+  border-radius: $font-size-tiny;
+  .ant-picker-suffix {
+    font-size: 20px;
+    color: #2c2c37;
+  }
+  &:hover {
+    border-color: #e67ca8;
+    box-shadow: 0 0 0 2px rgb(216 82 142 /20%);
+  }
+  &:focus {
+    border-color: #e67ca8;
+    box-shadow: 0 0 0 2px rgb(216 82 142 /20%);
+  }
+}
+.ant-picker-focused {
+  border-color: #e67ca8;
+  box-shadow: 0 0 0 2px rgb(216 82 142 /20%);
+}
+.ant-form-item-explain-error {
+  float: right;
+  font-style: italic;
+}
+.ant-picker-cell-inner {
+  &::before {
+    border: 1px solid #e67ca8 !important;
+  }
+}
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  color: #fff;
+  background: #e67ca8;
+}
+.ant-form-item {
+  flex-direction: column;
+  text-align: left;
+}
+.ant-form-item-label {
+  text-align: inherit;
+  .ant-form-item-required {
+    &::after {
+      display: none;
+    }
+  }
+}
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none;
+}

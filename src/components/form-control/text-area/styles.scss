@@ -1,0 +1,43 @@
+@import "styles/variables";
+.form-input-wrapper {
+  .text-area-custom {
+    border-radius: $border-radius-medium;
+    padding: 16px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: $line-height-body;
+
+    &:hover {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #d8528e !important;
+    }
+
+    &:focus{
+      border-width: 1px;
+      border-style: solid;
+      border-color: #d8528e !important;
+    }
+    &:active {
+      border-color: #e67ca8;
+      border-right-width: 1px !important;
+      outline: 0;
+      box-shadow: 0 0 0 2px rgb(216 82 142 / 20%);
+    }
+
+    &[disabled]{
+      border-color:1px solid $blue-gray-100;
+    }
+    &[disabled]:hover
+    &[disabled]:focus,
+    &[disabled]:active {
+      border-color: #e7e7ec;
+      color: #696984;
+      background: #f5f5f7;
+      opacity: 0.5;
+      box-shadow: none;
+    }
+  }
+}

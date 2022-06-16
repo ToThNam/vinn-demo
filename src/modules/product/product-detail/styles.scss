@@ -1,0 +1,241 @@
+@import "styles/variables";
+
+.product-detail {
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  .form-style {
+    .ant-form-item-has-error .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector,
+    .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper,
+    .ant-form-item-has-error .ant-input-number, .ant-form-item-has-error .ant-picker,
+    .ant-form-item-has-error :not(.ant-input-disabled):not(.ant-input-borderless).ant-input{
+        background-color: #fff;
+  border-color: $blue-gray-200 !important;
+}
+  .basic-information-content {
+    padding: 24px;
+    border-radius: $border-radius-huge;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    width: 964px;
+    background-color: white;
+  }
+  label,
+  .ant-form-item-required {
+    font-size: $font-size-tiny;
+    color: $blue-gray-700;
+  }
+  .ant-form-item {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .ant-form-item-label
+    > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    content: none;
+  }
+  .input-name {
+    width: 634px;
+    .form-input .ant-form-item-control-input-content .ant-input-affix-wrapper .ant-input-prefix {
+      margin: 4px !important; 
+  }
+  }
+  .ant-form-item-explain-error {
+    float: left !important;
+    font-style: italic;
+  }
+  .add-image-list {
+    display: flex;
+  }
+  .image-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    width: 120px;
+    padding: 0 12px 0 6px;
+    svg path {
+      fill:  rgba(44, 44, 55, 0.5);;
+    }
+  }
+  .image-icon{
+    position: absolute;
+    width: 110px;
+  }
+  .product-icon{
+    float: right;
+  }
+  .button-add-image-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 120px;
+  }
+  .add-image-title {
+    color: #696984;
+    margin-top: 12px;
+    font-size: $font-size-tiny;
+    font-family: $font-semibold;
+  }
+  .product-image{
+    width: 100%;
+    height: 120px;
+    border-radius: $border-radius-large;
+  }
+  .round-loading{
+    width: 120px;
+    height: 120px;
+    margin: 0 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;  
+    border: 1px solid #d8528e ; 
+    border-radius: $border-radius-large;
+  }
+  .round{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: transparent;  
+    border-style: dashed !important;
+    border: 1px solid $blue-gray-200; 
+    border-radius: $border-radius-large;
+    &:hover {
+      border-color: #d8528e !important;
+    }
+    svg path {
+      fill: #696984;
+    }
+  }
+  .product-uploader {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    border-style: dashed !important;
+    box-sizing: border-box;
+    border-radius: $border-radius-large;
+    border: 1px solid $blue-gray-200; 
+    border-radius: $border-radius-large;
+    &:hover {
+      border-color: #d8528e !important;
+    }
+  }
+  .image-title {
+    font-size: $font-size-tiny;
+    color: $blue-gray-400;
+  }
+  .select-tree-button {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    width: 634px;
+    height: 56px;
+    border-radius: $border-radius-medium;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $blue-gray-100;
+    svg path {
+      fill: $blue-gray-700;
+    }
+    &:hover {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #d8528e !important;
+    }
+  }
+  .select-status {
+    .ant-select {
+      width: 258px;
+    }
+  }
+  .price-inventory-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    width: 964px;
+    .price-inventory {
+      width: 470px;
+      padding: 24px;
+      background-color: white;
+      border-radius: $border-radius-huge;
+    }
+  }
+  .ant-input-number {
+    width: 201px;
+    height: 56px;
+    border: 1px solid #e7e7ec;
+    box-sizing: border-box;
+    border-radius: $border-radius-medium;
+    &:hover {
+      border-color: #d8528e !important;
+    }
+  }
+  .ant-input-number-focused {
+    border-color: #d8528e !important;
+    box-shadow: none !important;
+    border-right-width: none !important;
+    outline: 0;
+  }
+  .ant-input-number-input {
+    width: 201px;
+    height: 56px;
+    border: none;
+    padding: 12px;
+    transition: all 0.3s linear;
+  }
+  .ant-input-number-handler-wrap {
+    background: transparent !important;
+    border-radius: none !important;
+    svg path {
+      fill: $blue-gray-700;
+    }
+    .ant-input-number-handler-up-inner:hover,
+    .ant-input-number-handler-down-inner:hover {
+      svg path {
+        fill: #d8528e !important;
+      }
+    }
+    .ant-input-number-handler-up,
+    .ant-input-number-handler-down {
+      border-top-right-radius: none;
+      color: #d8528e !important;
+    }
+    .ant-input-number-handler:active {
+      background: transparent;
+    }
+  }
+  .sku-input {
+    width: 201px;
+    .form-input .ant-form-item-control-input-content .ant-input-affix-wrapper .ant-input-prefix {
+      margin: 4px !important; 
+  }
+  }
+}
+.group-save-cancel-button {
+  width: 964px;
+  margin-bottom: 52px;
+  .cancel-save-button {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    width: 306px;
+    .button-container {
+      width: 141px;
+      height: 48px;
+    }
+  }
+}
+}
+.error-form{
+  min-height: 24px;
+}
+}

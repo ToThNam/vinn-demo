@@ -1,0 +1,100 @@
+@import "styles/variables";
+
+.tree-select-container {
+  display: flex;
+  align-items: center;
+  width: 916px;
+  height:56px;
+  border: 1px solid $blue-gray-100;
+  box-sizing: border-box;
+  border-radius: $border-radius-medium;
+  .search-tree-select {
+    margin-left: 8px;
+    margin-right: 4px;
+  }
+  &:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d8528e !important;
+  }
+  .tree-select-content-container {
+    padding: 4px 4px 4px 12px;
+    display: flex;
+    .tree-select-content {
+      display: flex;
+      padding: 4px 4px 4px 12px;
+      height: 32px;
+      color: $vinivia-pink-500;
+      border-radius: $border-radius-large;
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.95),
+          rgba(255, 255, 255, 0.95)
+        ),
+        #d8528e;
+      span {
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.ant-tree {
+  margin: 24px 0;
+  padding: 22px 0 0 22px;
+  box-sizing: border-box;
+  border: 1px solid $blue-gray-100;
+  border-radius: $border-radius-large;
+  .ant-tree-switcher .ant-tree-switcher-icon {
+    transition: all 0.3s ease-in-out;
+    margin-top: 8px;
+  }
+  .ant-tree-treenode {
+    padding: 6px 6px;
+    &.ant-tree-treenode-switcher-open {
+      span.ant-tree-switcher.ant-tree-switcher_open {
+        svg {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .ant-tree-checkbox-inner {
+    border-radius: 6px;
+    border: 2px solid $blue-gray-700;
+    width: 22px;
+    height: 22px;
+    &:hover {
+      border-width: 2px;
+      border-style: solid;
+      border-color: #d8528e !important;
+    }
+  }
+.ant-tree-treenode:hover,
+.ant-tree-node-selected ,
+.ant-tree-treenode-selected{
+  width: 846px;
+  background: $vinivia-pink-200 !important;
+  border-radius: $border-radius-small;
+  .ant-tree-title{
+    color: #D8528C;
+  }
+}
+.ant-tree-node-content-wrapper{
+  background: transparent !important; 
+}
+  .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+    background: $background-gradient;
+    border-color: #D8528E !important;
+  }
+  .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after {
+    background: $background-gradient;
+    height: 2px;
+  }
+  .ant-tree-checkbox + span {
+    margin-top: 3.5px;
+  }
+  .ant-tree-checkbox-checked::after {
+    border: none;
+  }
+}

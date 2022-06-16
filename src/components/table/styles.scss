@@ -1,0 +1,88 @@
+@import "styles/variables";
+
+.table-container {
+  font-family: $font-family;
+  .ant-table-container table {
+    border-spacing: 0px !important;
+  }
+  .ant-table-container table > thead > tr:first-child {
+    th.ant-table-cell {
+      background-color: $blue-gray-50;
+      font-weight: bold !important;
+      font-size: $font-size-normal !important;
+      padding: 16px 16px !important;
+    }
+    th:first-child {
+      border-top-left-radius: $border-radius-medium;
+      border-bottom-left-radius: $border-radius-medium;
+    }
+    th:last-child {
+      border-top-right-radius: $border-radius-medium;
+      border-bottom-right-radius: $border-radius-medium;
+    }
+  }
+  .ant-table-cell::before {
+    display: none;
+  }
+  .ant-table.ant-table-empty {
+    .ant-table-tbody {
+      height: 50vh;
+      td.ant-table-cell {
+        border-bottom: unset;
+      }
+    }
+  }
+  .ant-table-tbody {
+    tr.ant-table-row {
+      color: $blue-gray-700;
+      cursor: pointer;
+    }
+  }
+  .ant-table-body {
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  .ant-checkbox-inner {
+    border-radius: 6px;
+    border: 2px solid $blue-gray-700;
+    width: 22px;
+    height: 22px;
+  }
+  .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+  .ant-checkbox:hover .ant-checkbox-inner,
+  .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #d8528e !important;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background: $background-gradient;
+    border-color: #d8528e !important;
+  }
+  .ant-checkbox-checked::after {
+    border: none;
+  }
+  .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+    background: $background-gradient;
+    height: 2px;
+  }
+  .ant-checkbox + span {
+    margin-top: 3.5px;
+  }
+}
+.ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #d8528e;
+}
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    #d8528e;
+  border-color: rgba(0, 0, 0, 0.03);
+}

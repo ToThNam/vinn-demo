@@ -1,0 +1,46 @@
+@import "styles/variables";
+
+.form-change-password-success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 512px;
+  z-index: 10000;
+  text-align: center;
+  .logo{
+      height: 120px;
+      svg {
+    transform: translateY(30%);
+    }
+  }
+  .change-password-success-form{
+    .image-change-password-success{
+        width: 350px;
+        height: 350px;
+        background-image: url("/assets/image/change-password-success-img.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        transform: translateX(0%);
+        align-self: center;
+        }  
+    }
+    .description-change-password{
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 16px;
+      color: #212121;
+    }
+    .ant-form-item-control-input-content{
+      transform: translate(15%);
+      height: 150px;
+      margin-top: 10px;
+        button {
+          width: 350px;
+          height: 56px;
+        }
+    }
+}

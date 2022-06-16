@@ -1,0 +1,51 @@
+@import "styles/variables";
+
+.ant-modal.confirm-modal-wrapper {
+  font-family: $font-family;
+  padding-bottom: 0px;
+  .ant-modal-content {
+    padding: 36px 16px 16px 16px;
+    background: $white;
+    border-radius: $border-radius-large;
+    box-shadow: 0px 4px 16px rgb(0 0 0 /16%);
+    button.ant-modal-close {
+      display: none;
+    }
+    .ant-modal-body {
+      text-align: center;
+      padding: 0px !important;
+      margin-bottom: 36px;
+    }
+    .ant-modal-footer {
+      border-top: unset;
+      padding: 0px !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-around !important;
+      position: relative;
+      button {
+        border: none;
+        box-shadow: unset;
+        background-color: transparent;
+        height: unset;
+        padding: 0px;
+      }
+      button:first-child {
+        color: $blue-gray-400;
+      }
+      button:last-child {
+        color: $red;
+      }
+      &::after {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateY(-50%);
+        content: "";
+        width: 1px;
+        height: 16px;
+        background-color: $blue-gray-400;
+      }
+    }
+  }
+}
